@@ -10,11 +10,11 @@ class SupplierController extends Controller
 {
     public function index(): View
     {
-        $suppliers = Supplier::select('suppliers.*', 'category_supplier.supplier_category_name as category_name')
-            ->leftJoin('category_supplier', 'category_supplier.id', '=', 'suppliers.supllier_category_id')
-            ->latest()
-            ->paginate(10);
-
-        return view('suppliers.index', compact('suppliers'));
-    }
+        $supplier = new Supplier;
+        $suppliers = $supplier -> get_supplier()
+                                 ->latest()
+                                 ->paginate(10);
+ 
+     return view('suppliers.index', compact('suppliers'));
+     }
 }
