@@ -7,13 +7,13 @@
     <title>Data Suppliers</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
-<body style="background: pink">
+<body style="background:  #f0bbbb">
     
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-12">
             <div>
-                <h3 class="text-center my-4">Tutorial Laravel 11</h3>
+                <h3 class="text-center my-4">LIST SUPPLIER</h3>
                 <hr>
             </div>
             <div class="card border-0 shadow-sm rounded">
